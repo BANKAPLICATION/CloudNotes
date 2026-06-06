@@ -1,0 +1,11 @@
+type Note @model @auth(rules: [{ allow: owner }]) {
+    id: ID!
+    userId: String!
+    title: String!
+    dateTime: String!
+    subtitle: String
+    noteText: String
+    imagePath: String
+    color: String
+    webLink: String
+}

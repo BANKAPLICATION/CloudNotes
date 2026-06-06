@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- CloudNotes design system -->
+    <color name="bg_deep">#0A0E1A</color>
+    <color name="bg_surface">#12182A</color>
+    <color name="bg_surface_elevated">#1A2238</color>
+    <color name="bg_glass">#1E2740</color>
+    <color name="border_subtle">#2B3550</color>
+
+    <color name="primary_violet">#7C5CFF</color>
+    <color name="primary_blue">#4F8CFF</color>
+    <color name="accent_teal">#2DD4BF</color>
+    <color name="accent_coral">#FB7185</color>
+    <color name="accent_amber">#FBBF24</color>
+
+    <color name="purple">#7C5CFF</color>
+    <color name="lavender">#7C5CFF</color>
+
+    <color name="text_primary_light">#F8FAFC</color>
+    <color name="text_secondary_light">#94A3B8</color>
+    <color name="text_muted">#64748B</color>
+
+    <!-- Legacy aliases used across layouts -->
+    <color name="colorPrimary">#0A0E1A</color>
+    <color name="colorPrimaryDark">#070A14</color>
+    <color name="colorAccent">#2DD4BF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSearchIcon">#7C5CFF</color>
+    <color name="colorTextHint">#64748B</color>
+    <color name="colorQuickActionsBackground">#151B2B</color>
+    <color name="colorIcons">#CBD5E1</color>
+    <color name="colorTextSubtitle">#CBD5E1</color>
+    <color name="colorDefaultNoteColor">#1A2238</color>
+    <color name="colorNoteSubtitleText">#F1F5F9</color>
+    <color name="colorMiscellaneousBackground">#151B2B</color>
+    <color name="colorNoteColor2">#FBBF24</color>
+    <color name="colorNoteColor3">#FB7185</color>
+    <color name="colorNoteColor4">#4F8CFF</color>
+    <color name="colorNoteColor5">#1A2238</color>
+    <color name="colorDelete">#FB7185</color>
+    <color name="colorSearchBackground">#1A2238</color>
+
+    <!-- Profile -->
+    <color name="profilePrimaryDark">#7C5CFF</color>
+    <color name="profileAccentColor">#1A2238</color>
+    <color name="whiteTextColor">#F8FAFC</color>
+    <color name="profileBackground">#12182A</color>
+    <color name="blackTextColor">#F8FAFC</color>
+    <color name="profileEditTextColor">#94A3B8</color>
+
+    <!-- Fitness -->
+    <color name="colorPrimaryFitness">#4F8CFF</color>
+    <color name="colorPrimaryDarkFitmness">#3B6FD9</color>
+    <color name="colorAccentFitness">#FB7185</color>
+    <color name="background_color">#0A0E1A</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="steps_color">#4F8CFF</color>
+    <color name="steps_text_color">#4F8CFF</color>
+    <color name="distance_text_color">#FB7185</color>
+    <color name="distance_color">#FB7185</color>
+</resources>

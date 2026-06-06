@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_auth_screen">
+
+    <!-- Background Illustration -->
+    <View
+        android:id="@+id/IV_backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_auth_screen"
+        android:layout_alignParentTop="true" />
+
+    <!-- Login Card -->
+    <LinearLayout
+        android:id="@+id/LL_signupCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_auth_card"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+        android:elevation="4dp">
+
+        <!-- Login Title -->
+        <TextView
+            android:id="@+id/TV_signupTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/TV_LetsGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/let_s_get_started"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu_regular"
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            app:lottie_fileName="watch.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <!-- Username Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_field"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_person" />
+
+            <EditText
+                android:id="@+id/EDT_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full name"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:background="@android:color/transparent"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_field"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_email" />
+
+            <EditText
+                android:id="@+id/EDT_emailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:textColorHint="@color/black"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:background="@android:color/transparent"
+
+                />
+        </LinearLayout>
+
+        <!-- Password Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_field"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/EDT_passwordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_field"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/EDT_confirmPasswordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- Confirmation OTP , initially Hidden -->
+        <LinearLayout
+            android:id="@+id/LL_otpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_field"
+
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+
+            >
+
+            <EditText
+                android:id="@+id/EDT_emailOTP"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:hint="Email OTP"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TV_resendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Didn't get the code? Resend OTP"
+            android:textColor="#4A90E2"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/BTN_Confirm_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:text="Confirm Sign Up"
+            android:backgroundTint="@color/lavender"
+            android:visibility="gone"
+
+
+            /> <!-- Initially hidden -->
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/BTN_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:backgroundTint="@color/lavender"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+
+
+            />
+
+        <!-- Sign Up Link -->
+        <TextView
+            android:id="@+id/TV_signinLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allready registered? Signin Now"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:layout_below="@id/loginCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textColor="#4A90E2"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

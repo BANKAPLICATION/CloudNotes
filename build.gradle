@@ -1,0 +1,116 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.cloudnotes.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.cloudnotes.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        dataBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
+        }
+    }
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    // Android essentials
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+
+    // Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    // Amplify core dependency
+    implementation libs.aws.android.sdk.core
+    implementation libs.core
+    implementation libs.aws.auth.cognito
+
+    //AWS Authentication
+    implementation libs.aws.android.sdk.auth.core
+    implementation libs.aws.android.sdk.auth.userpools
+    implementation libs.aws.android.sdk.cognitoidentityprovider
+
+
+    implementation libs.aws.android.sdk.auth.ui.v2730
+    implementation libs.aws.android.sdk.cognitoauth
+
+    //AWS Services
+    //implementation libs.aws.api // Optional: for API integration
+    implementation libs.aws.android.sdk.pinpoint
+    implementation libs.aws.android.sdk.s3
+    implementation libs.aws.storage.s3
+    //implementation libs.aws.android.sdk.dynamodb
+    implementation libs.aws.datastore
+    implementation libs.aws.android.sdk.mobile.client
+    implementation libs.aws.android.sdk.ddb.mapper
+
+
+    //Image loader
+    implementation libs.glide
+    annotationProcessor libs.compiler
+
+
+    //UI Components
+    implementation libs.sdp.android
+    implementation libs.ssp.android
+    implementation libs.roundedimageview
+    implementation libs.androidx.browser
+    implementation libs.customview
+
+
+
+    // Support for Java 8 features
+    coreLibraryDesugaring libs.desugar.jdk.libs
+
+
+    //implementation libs.dynamodb.v220145
+
+    implementation libs.lottie
+
+    //walk and graph
+    implementation libs.play.services.fitness
+    implementation libs.mpandroidchart // For the graph
+
+    // Optional: For Facebook login
+    implementation libs.aws.android.sdk.auth.facebook
+    // Optional: For Google login
+    implementation libs.aws.android.sdk.auth.google
+    implementation libs.facebook.android.sdk
+
+    implementation libs.androidx.browser.v170
+
+
+
+
+
+
+
+
+}

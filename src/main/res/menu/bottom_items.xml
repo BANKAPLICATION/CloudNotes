@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:iconTint="@color/white"
+
+
+        />
+
+    <item
+        android:title="Anchor"
+        android:id="@+id/anchor"
+        android:icon="@drawable/anchor_icon"
+        android:iconTint="@color/white"
+
+        />
+
+    <item
+        android:title="Alt rout"
+        android:id="@+id/altrout"
+        android:icon="@drawable/altrout_icon"
+        android:iconTint="@color/white"
+
+        />
+
+</menu>

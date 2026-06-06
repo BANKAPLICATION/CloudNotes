@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main menu group -->
+    <group
+        android:id="@+id/main_group"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"
+            android:icon="@drawable/home_icon" />
+
+        <item
+            android:id="@+id/profile"
+            android:title="@string/profile"
+            android:icon="@drawable/profile" />
+
+        <item
+            android:id="@+id/settings"
+            android:title="@string/settings"
+            android:icon="@drawable/setting" />
+    </group>
+
+    <!-- Bottom menu group with layout_gravity -->
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/usersFitness"
+            android:icon="@drawable/ic_fitness"
+            android:iconTint="@color/white"
+            android:title="My Fitness" />
+
+        <item
+            android:id="@+id/nav_achievements"
+            android:icon="@drawable/ic_trophy"
+            android:iconTint="@color/white"
+            android:title="@string/achievements_menu" />
+
+                <item
+                    android:title="Share app"
+                    android:id="@+id/shareApp"
+                    android:icon="@drawable/ic_share"
+                    android:iconTint="@color/white"
+
+                    />
+            </group>
+        </menu>
+    </item>
+
+    <!-- Bottom menu group with layout_gravity -->
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/logout"
+                    android:title="@string/logout"
+                    android:icon="@drawable/logout" />
+            </group>
+        </menu>
+    </item>
+</menu>

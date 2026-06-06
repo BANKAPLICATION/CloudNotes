@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+        android:background="@drawable/bg_drawer_header"
+    android:paddingStart="10dp"
+    >
+
+    <!-- Profile Section -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/IV_header_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/demo_profile_3"
+            android:scaleType="centerCrop"
+            />
+        <!-- Circular ProgressBar -->
+        <ProgressBar
+            android:id="@+id/headerProgressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:indeterminate="true"/>
+
+    </FrameLayout>
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/tv_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="My Name is Anu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/TV_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="12 Jun 1997"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+</LinearLayout>
