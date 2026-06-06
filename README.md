@@ -138,7 +138,6 @@ public static final String S3_BUCKET_NAME = "your-bucket-name";
 
 5. Open the project in Android Studio, sync Gradle, and run on emulator or device (API 24+)
 
-For full AWS setup steps see AWS_SETUP.md
 
 AWS Resources Required
 - Cognito User Pool with email verification (OTP)
